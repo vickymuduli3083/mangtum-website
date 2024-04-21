@@ -1,0 +1,233 @@
+.tab {
+    overflow: hidden;
+  }
+  /* Style the buttons inside the tab */
+  .tab button {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .tab button:hover {
+  }
+  .login-page {
+    background-image: url(image/login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+  /* Create an active/current tablink class */
+  .tab button.active {
+  }
+  .form-btn button {
+    background: #F2BF4C;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 30px;
+  }
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+  }
+  .my-account {
+    border-left: 10px solid #F2BF4C;
+    background: #fff;
+    border-radius: 10px;
+    padding: 45px;
+    margin: 0 10px;
+    border-right: 10px solid #F2BF4C;
+    border-right-width: 10px;
+    border-right-style: solid;
+    border-left-color: rgb(242, 191, 76);
+  }
+
+  .my-account h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #444;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+  }
+  
+
+  .facebook-login-button {
+    background: #3b579d;
+    border-radius: 5px;
+    padding: 11px 18px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #F2BF4C;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .google-btn button {
+    background: #3b579d!important;
+    border-radius: 5px!important;
+    padding-right: 18px!important;
+    padding: 0px!important;
+    font-size: 12px!important;
+    font-family: 'Poppins', sans-serif!important;
+    color: #fff!important;
+    outline: none!important;
+    width: 100%!important;
+    padding-right: 15px!important;
+    margin-top: 10px!important;
+    cursor: pointer!important;
+    margin-bottom: 10px!important;
+  }
+
+  .google-btn button div {
+    margin-right: 15px!important;
+    background: rgb(255, 255, 255);
+    padding: 9px !important;
+    border-radius: 5px 0 0 5px!important;
+  }
+
+  .google-btn button span {
+    font-weight: 400!important;
+  }
+
+  section.faq-banner {
+    padding-top: 50px;
+  }
+
+  .facebook-login-button i {
+    margin-right: 5px;
+  }
+
+  .my-account .col-6 {
+    padding: 5px;
+  }
+
+  .tab button {
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    padding: 8px 10px;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    color: #F2BF4C;
+    border: 1px solid #F2BF4C;
+    outline: none;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+  .login-page{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+
+  .my-account form {
+    width: 100%;
+  }
+
+  .my-account form input {
+    font-size: 14px;
+    color: #444;
+    font-family: "Poppins", sans-serif;
+    background: #fef5e4;
+    border: none;
+    outline: none;
+    /* width: 100%; */
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px 25px;
+  }
+
+  .my-account form input::placeholder {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .my-account button {
+    width: 100%;
+  }
+
+  .my-account form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .my-account form label.profile_img_label{
+    overflow: hidden;
+  }
+
+  .my-account form .lost {
+    font-size: 12px;
+    font-weight: 500;
+    color: #F2BF4C !important;
+    font-family: "Poppins", sans-serif;
+    float: right;
+  }
+  .my-account form .forgot-login{
+    font-size: 12px;
+    font-weight: 500;
+    color: #F2BF4C !important;
+    font-family: "Poppins", sans-serif;
+}
+
+  .my-account form .checkbox input {
+    width: auto;
+  }
+
+  .my-account form .checkbox {
+    display: flex;
+    align-items: center;
+  }
+
+  .other-login ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .other-login ul li {
+    margin: 15px 0px;
+  }
+
+  .tab button.active, .tab button.hover {
+    background: #F2BF4C;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-top: 40px;
+    border: 1px solid #F2BF4C;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  section.login-page.mt-5.pt-5 {
+      background: #4a4848;
+  }
+
+  .my-account form #card-errors{
+    color: red;
+    font-size: 14px;
+  }
+
+  .my-account form div#card-fields {
+    padding: 0 15px;
+    background: #fef5e4;
+    border-radius: 5px;
+}
+

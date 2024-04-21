@@ -1,0 +1,882 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+        slider.oninput = function() {
+          output.innerHTML = this.value;
+        }
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <div class="container-fluid" style="background-color: #f7c576;">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <div class="newsflash" style="left: 140px;position: relative;">
+                    <p style="font-size: 10px;font-weight: 700;left: 20px;">From Zero to Thousands: Mangtum's Swift
+                        Solution for Vendor Product Listings</p>
+                    <div class="font-design">For consumers who love Creative &amp; Alluring items</div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="text-align: center;">
+                        <div class="social_icons_top_header d-flex " style=" position: relative;
+                            right: 110px;">
+                            <a href="https://www.facebook.com/profile.php?id=100063585218866">
+                                <img width="18px" height="18px" src="image/f.jpg" alt=""></a>
+                            <a href="https://www.instagram.com/mangtum_shop/">
+                                <img width="18px" height="18px" src="image/i.jpg" alt=""></a>
+                            <a href="https://twitter.com/mangtumllc">
+                                <img width="18px" height="18px" src="image/t.jpg" alt=""></a>
+
+                        </div>
+                </div>
+                </ul>
+            </div>
+    </div>
+    </nav>
+    <div class="container">
+        <div class="flex-header my-3">
+            <a class="navbar-brand" href="/">
+                <img src="data:image/png;base64,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"
+                    title="" alt=""></a>
+            <div class="search_box" spiketip-title="🔍" Search Anything" spiketip-pos="left" spiketip-color="error">
+                <input type="search" name="search" class="form-control w-100" placeholder="Search Product"
+                    id="search_item" value="">
+                <span to="" class="search_icon">
+                    <i class="fa fa-search" aria-hidden="true"></i></span>
+            </div>
+            <div class="navLine">
+                <div class="searchdesg"><a spiketip-title="💰 Partner with us &amp; Sell Your Products!"
+                        spiketip-pos="top" class="d-flex align-items-center"
+                        href="https://mangtum.com/admin/vendor/login" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                            class="sellProductIcon me-2">
+                            <g clip-path="url(#clip0_5_20)">
+                                <path
+                                    d="M14.875 8.18px918pxV14.875C14.875 15.0629 14.8004 15.18px3 14.6675 15.3759C14.5347 15.5087 14.3545 15.5833 14.1667 15.5833H2.83333C2.64546 15.5833 2.4653 15.5087 2.3318px6 15.3759C2.19962 15.18px3 2.118px99 15.0629 2.118px99 14.875V8.18px918pxC1.66763 7.73213 1.41563 7.06534 1.41666 6.37499V2.118px99C1.41666 1.93713 1.49129 1.75696 1.618px13 1.618px12C1.75696 1.49128 1.93713 1.41666 2.118px99 1.41666H14.875C15.0629 1.41666 15.18px3 1.49128 15.3759 1.618px12C15.5087 1.75696 15.5833 1.93713 15.5833 2.118px99V6.37499C15.5833 7.09318px 15.3156 7.74916 14.875 8.18px918pxZM13.4583 9.11907C12.9518 9.18px921 12.4191 9.23685 11.9191 9.08336C11.4191 8.92986 10.9713 8.6412 10.625 8.18px918pxC10.3594 8.55105 10.0318px 8.79272 9.666 8.95811C9.29955 9.1235 8.90203 9.2088 8.49999 9.20832C8.09795 9.2088 7.70044 9.1235 7.33399 8.95811C6.96755 8.79272 6.6406 8.55105 6.37499 8.18px918pxC6.02955 8.64232 5.58175 8.93177 5.08149 9.08535C4.58118px 9.23893 4.04816 9.25061 3.54166 9.11907V14.1667H13.4583V9.11907ZM9.91666 6.37499C9.91666 6.18713 9.99129 6.00696 10.118px1 5.87412C10.257 5.74128 10.4371 5.66666 10.625 5.66666C10.8129 5.66666 10.993 5.74128 11.1259 5.87412C11.2587 6.00696 11.3333 6.18713 11.3333 6.37499C11.3333 6.75071 11.4826 7.11105 11.7483 7.37672C12.0139 7.6418px 12.3743 7.79166 12.75 7.79166C13.1257 7.79166 13.4861 7.6418px 13.7517 7.37672C14.0174 7.11105 14.1667 6.75071 14.1667 6.37499V2.83332H2.83333V6.37499C2.83333 6.75071 2.98258 7.11105 3.18px826 7.37672C3.51393 7.6418px 3.87427 7.79166 4.18px999 7.79166C4.62572 7.79166 4.98605 7.6418px 5.25173 7.37672C5.5174 7.11105 5.66666 6.75071 5.66666 6.37499C5.66666 6.18713 5.74129 6.00696 5.87413 5.87412C6.00696 5.74128 6.18713 5.66666 6.37499 5.66666C6.56285 5.66666 6.74302 5.74128 6.87586 5.87412C7.0087 6.00696 7.08333 6.18713 7.08333 6.37499C7.08333 6.75071 7.23258 7.11105 7.49826 7.37672C7.76394 7.6418px 8.118px27 7.79166 8.49999 7.79166C8.87572 7.79166 9.23605 7.6418px 9.50173 7.37672C9.7674 7.11105 9.91666 6.75071 9.91666 6.37499Z"
+                                    class="sellProductIcon"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_5_20">
+                                    <rect width="17" height="17" class="sellProductIcon"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span class="d-none d-md-inline sell-your-product">Sell your Product</span></a>
+                </div>
+                <a href="/wishlist" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" class="nav-link cart dbookmark" spiketip-title="💟" Your Dream Cart!"
+                    spiketip-pos="left" spiketip-color="success">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                      </svg>
+
+                    </i><span>5</span>
+                </a>
+                <a href="/cart" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" class="nav-link cart" spiketip-title="🛒 View Cart!"
+                spiketip-pos="bottom" spiketip-color="success">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                  </svg><span>7</span></a>
+                <a class="signbtn" href="/login">Sign in</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid">
+        <nav class="navbar container navbar-expand-lg navbar-light nav-scroll-fixed" id="mainNav">
+            <div class="position-relative"><button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="/magNav" aria-controls="magNav" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse " id="magNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="">Beads
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 18 19"
+                                    fill="none" class="ms-2">
+                                    <path
+                                        d="M14.9396 7.2124L10.0496 12.1024C9.47207 12.6799 8.52707 12.6799 7.94957 12.1024L3.05957 7.2124"
+                                        stroke="#051441" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item" href="Briolette.html">Briolette</a></li>
+                                <li><a class="dropdown-item" href="Gemstone Beads.html">Gemstone Beads</a></li>
+                                <li><a class="dropdown-item" href="">Rough Beads</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="">Curated
+                                Painting
+                                <svg xmlns="" width="15" height="15" viewBox="0 0 18 19" fill="none" class="ms-2">
+                                    <path
+                                        d="M14.9396 7.2124L10.0496 12.1024C9.47207 12.6799 8.52707 12.6799 7.94957 12.1024L3.05957 7.2124"
+                                        stroke="#051441" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item" href="">Acrylic</a></li>
+                                <li><a class="dropdown-item" href="">Pencil</a></li>
+                                <li><a class="dropdown-item" href="">Watercolor</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="/fashion-jewelry">Fashion
+                                Jewelry
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 18 19"
+                                    fill="none" class="ms-2">
+                                    <path
+                                        d="M14.9396 7.2124L10.0496 12.1024C9.47207 12.6799 8.52707 12.6799 7.94957 12.1024L3.05957 7.2124"
+                                        stroke="#051441" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item" href="">Body Jewelry</a>
+                                </li>
+                                <li><a class="dropdown-item" href="">Bracelet</a></li>
+                                <li><a class="dropdown-item" href="">Earrings</a></li>
+                                <li><a class="dropdown-item" href="">Necklaces</a></li>
+                                <li><a class="dropdown-item" href="">Pendants</a></li>
+                                <li><a class="dropdown-item" href="">Rings</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown"><a class="nav-link " href="/fine-jewelry">Fine Jewelry<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 18 19"
+                                    fill="none" class="ms-2">
+                                    <path
+                                        d="M14.9396 7.2124L10.0496 12.1024C9.47207 12.6799 8.52707 12.6799 7.94957 12.1024L3.05957 7.2124"
+                                        stroke="#051441" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item" href="">Diamond</a></li>
+                                <li><a class="dropdown-item" href="">Gold</a></li>
+                                <li><a class="dropdown-item" href="">Silver</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown"><a class="nav-link " href="">Gemstones<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 18 19"
+                                    fill="none" class="ms-2">
+                                    <path
+                                        d="M14.9396 7.2124L10.0496 12.1024C9.47207 12.6799 8.52707 12.6799 7.94957 12.1024L3.05957 7.2124"
+                                        stroke="#051441" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item" href="">Precious</a></li>
+                                <li><a class="dropdown-item" href="">Semi-Precious</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <main class>
+        <div class="page-title">
+            <div class="breadcrumb-head container">
+                <h1 class="page-title-heading d-none d-sm-block">Briolette</h1>
+                <nav class="breadcrumb-wrap">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item " aria-current="page"><span
+                                class="breadcrumb_active text-capitalize">Briolette</span></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <section class="single-wrapper">
+            <div class="container">
+                <div class="cate-description mt-2">
+                    <p>Mangtum's expertly curated Briollete collection offers exquisite briolette beads, precision-cut
+                        stones, <b>
+                            <a href="Gemstone Beads.html" target="_blank">gemstone
+                                beads</a></b> and captivating jewelry pieces. Each briolette earrings, necklace delivers
+                        the timeless attraction of briolette diamonds.</p>
+                </div>
+                <div class="filter-head row">
+                    <div class="col-lg-5 col-12">
+                        <div class="counter grey-text">Showing all 12 results </div>
+                    </div>
+                    <div class="col-lg-7 col-12 mt-4 mt-md-0">
+                        <div class="d-flex flex-wrap justify-content-end gap-4">
+                            <div class="view-style">
+                                <h3>Views : </h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-list-task" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5zM3 3H2v1h1z" />
+                                    <path
+                                        d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1z" />
+                                    <path fill-rule="evenodd"
+                                        d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5zM2 7h1v1H2zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm1 .5H2v1h1z" />
+                                </svg>
+                            </div>
+                            <div class="dropdown-container d-none d-md-block">
+                                <div class="dropdown-input"><input type="text" readonly="" placeholder="Sort&nbsp;by"
+                                        value="" fdprocessedid="gdroup"></div>
+                            </div><button class="filter-btn">Filters</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 resp-hide">
+                        <div class="side-filter">
+                            <p class="d-flex justify-content-end mb-2">
+                                <button class="svg-icon">
+                                    <img src="/static/media/x.c90e16edc1ccfaae42e4.svg" alt=""></button>
+                            </p>
+                            <div>
+                                <div class="dropdown-container d-md-none mb-2 mb-md-0">
+                                    <div class="dropdown-input">
+                                        input type="text" readonly=""
+                                        placeholder="Sort&nbsp;by" value=""></div>
+                                </div>
+                                <div class="filterCategoriesPrice mt-2 mb-2">Price</div>
+                                <div class="price-inps">
+                                    <div>
+                                        <label class="filterSub_categoryPrice">From $</label>
+                                        <input type="number" min="2.16" value="2.16" fdprocessedid="5j78o">
+                                    </div>
+                                    <div>
+                                        <label class="filterSub_categoryPrice">To $</label>
+                                        <input type="number" max="2888.99" value="2888.99" fdprocessedid="8lltt">
+                                    </div>
+                                </div>
+                                <label for="customRange1" class="form-label">Example range</label>
+                                <div class="slidecontainer">
+                                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                                    <p>Value: <span id="demo"></span></p>
+                                  </div>
+                                  
+                                <div class="side-flex">
+                                    <div class="filterCategories">Categories</div>
+                                </div>
+                                <ul>
+                                    <li><a class="main-link" href="/beads"><span
+                                                class="filterCategoriesPrice">Beads</span></a></li>
+                                    <ul>
+                                        <li><a href="Briolette.html"><span
+                                                    class="filterSub_category">Briolette</span></a></li>
+                                        <li><a href="Gemstone Beads.html"><span class="filterSub_category">Gemstone
+                                                    Beads</span></a></li>
+                                        <li><a href="/beads/metal"><span class="filterSub_category">Metal</span></a>
+                                        </li>
+                                        <li><a href="/beads/pearl"><span class="filterSub_category">Pearl</span></a>
+                                        </li>
+                                        <li><a href="/beads/rough-beads"><span class="filterSub_category">Rough
+                                                    Beads</span></a></li>
+                                        <li><a href="/beads/seed"><span class="filterSub_category">Seed</span></a></li>
+                                        <li><a href="/beads/wood"><span class="filterSub_category">Wood</span></a></li>
+                                    </ul>
+                                    <li><a href="/accessories"><span class="filterSub_category">Accessories</span></a>
+                                    </li>
+                                    <li><a href="/curated-painting"><span class="filterSub_category">Curated
+                                                Painting</span></a></li>
+                                    <li><a href="/fashion-jewelry"><span class="filterSub_category">Fashion
+                                                Jewelry</span></a></li>
+                                    <li><a href="/fine-jewelry"><span class="filterSub_category">Fine Jewelry</span></a>
+                                    </li>
+                                    <li><a href="Gemstone Beads.html"><span
+                                                class="filterSub_category">Gemstones</span></a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="filterCategoriesPrice">Filters</div>
+                                <ul class="nested-filter">
+                                    <li class="title-li">
+                                        <span class="att-title filterSub_category">Color</span>
+                                        <i class="fa fa-chevron-down " style="cursor: pointer; font-size: 10px;"></i>
+                                    </li>
+                                    <li class="title-li">
+                                        <span class="att-title filterSub_category">HandMade</span>
+                                        <i class="fa fa-chevron-down " style="cursor: pointer; font-size: 10px;"></i>
+                                    </li>
+                                    <li class="title-li">
+                                        <span class="att-title filterSub_category">Bead Name</span>
+                                        <i class="fa fa-chevron-down " style="cursor: pointer; font-size: 10px;"></i>
+                                    </li>
+                                    <li class="title-li">
+                                        <span class="att-title filterSub_category">Faceted</span>
+                                        <i class="fa fa-chevron-down " style="cursor: pointer; font-size: 10px;"></i>
+                                    </li>
+                                    <li class="title-li">
+                                        <span class="att-title filterSub_category">Shape</span>
+                                        <i class="fa fa-chevron-down " style="cursor: pointer; font-size: 10px;"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="row g-4">
+                            <div class="position-relative wow animated fadeInUp col-lg-3 col-md-6 col-sm-6 col-6">
+                                <div class="wishlist-icon">
+                                    <i class="fa fa-heart" aria-hidden="true" id="heartIcon-0"
+                                        style="cursor: pointer;"></i>
+                                </div>
+                                <a keys="23301"
+                                    href="/shop/10-pieces-composite-turquoise-copper-smooth-round-shape-hoop-natural-gemstone-plane-center-drill-beads-line-copper-turquoise-strand-23301">
+                                    <div class="item  me-2 product-card mb-3" keys="23301">
+                                        <div class="mt-0">
+                                            <div class="col overflow">
+                                                <div class="card ">
+                                                    <img src="image/cart10.webp" class="card-img-top sizing" alt="...">
+                                                    <div class="card-body">
+                                                        <div class=" py-3 product-content" style="width: auto;">
+                                                            <div class="category_title">
+                                                                <p spiketip-title="10 Pieces COMPOSITE TURQUOISE &amp; COPPER Smooth Round Shape Hoop Natural Gemstone Plane Center Drill Beads Line | Copper T"
+                                                                    spiketip-pos="bottom-left" spiketip-color="black">10
+                                                                    Pieces
+                                                                    COMPOSITE TU </p>
+                                                            </div>
+                                                            <div class="categoryCartDes text-wrap oneLine">10 Pieces
+                                                                COMPOSITE
+                                                                TURQU...</div>
+                                                            <div class="price">
+                                                                <div class="grey-text"><span
+                                                                        class="text-warning ">$568.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="position-relative wow animated fadeInUp col-lg-3 col-md-6 col-sm-6 col-6">
+                                <div class="wishlist-icon">
+                                    <i class="fa fa-heart" aria-hidden="true" id="heartIcon-0"
+                                        style="cursor: pointer;"></i>
+                                </div>
+                                <a keys="23301"
+                                    href="/shop/10-pieces-composite-turquoise-copper-smooth-round-shape-hoop-natural-gemstone-plane-center-drill-beads-line-copper-turquoise-strand-23301">
+                                    <div class="item  me-2 product-card mb-3" keys="23301">
+                                        <div class="mt-0">
+                                            <div class="col overflow">
+                                                <div class="card ">
+                                                    <img src="image/cart14.webp" class="card-img-top sizing" alt="...">
+                                                    <div class="card-body">
+                                                        <div class=" py-3 product-content" style="width: auto;">
+                                                            <div class="category_title">
+                                                                <p spiketip-title="10 Pieces COMPOSITE TURQUOISE &amp; COPPER Smooth Round Shape Hoop Natural Gemstone Plane Center Drill Beads Line | Copper T"
+                                                                    spiketip-pos="bottom-left" spiketip-color="black">10
+                                                                    Pieces
+                                                                    COMPOSITE TU </p>
+                                                            </div>
+                                                            <div class="categoryCartDes text-wrap oneLine">10 Pieces
+                                                                COMPOSITE
+                                                                TURQU...</div>
+                                                            <div class="price">
+                                                                <div class="grey-text"><span
+                                                                        class="text-warning ">$568.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="position-relative wow animated fadeInUp col-lg-3 col-md-6 col-sm-6 col-6">
+                                <div class="wishlist-icon">
+                                    <i class="fa fa-heart" aria-hidden="true" id="heartIcon-0"
+                                        style="cursor: pointer;"></i>
+                                </div>
+                                <a keys="23301"
+                                    href="/shop/10-pieces-composite-turquoise-copper-smooth-round-shape-hoop-natural-gemstone-plane-center-drill-beads-line-copper-turquoise-strand-23301">
+                                    <div class="item  me-2 product-card mb-3" keys="23301">
+                                        <div class="mt-0">
+                                            <div class="col overflow">
+                                                <div class="card ">
+                                                    <img src="image/cart8.webp" class="card-img-top sizing" alt="...">
+                                                    <div class="card-body">
+                                                        <div class=" py-3 product-content" style="width: auto;">
+                                                            <div class="category_title">
+                                                                <p spiketip-title="10 Pieces COMPOSITE TURQUOISE &amp; COPPER Smooth Round Shape Hoop Natural Gemstone Plane Center Drill Beads Line | Copper T"
+                                                                    spiketip-pos="bottom-left" spiketip-color="black">10
+                                                                    Pieces
+                                                                    COMPOSITE TU </p>
+                                                            </div>
+                                                            <div class="categoryCartDes text-wrap oneLine">10 Pieces
+                                                                COMPOSITE
+                                                                TURQU...</div>
+                                                            <div class="price">
+                                                                <div class="grey-text"><span
+                                                                        class="text-warning ">$568.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="position-relative wow animated fadeInUp col-lg-3 col-md-6 col-sm-6 col-6">
+                                <div class="wishlist-icon">
+                                    <i class="fa fa-heart" aria-hidden="true" id="heartIcon-0"
+                                        style="cursor: pointer;"></i>
+                                </div>
+                                <a keys="23301"
+                                    href="/shop/10-pieces-composite-turquoise-copper-smooth-round-shape-hoop-natural-gemstone-plane-center-drill-beads-line-copper-turquoise-strand-23301">
+                                    <div class="item  me-2 product-card mb-3" keys="23301">
+                                        <div class="mt-0">
+                                            <div class="col overflow">
+                                                <div class="card ">
+                                                    <img src="image/cart5.webp" class="card-img-top sizing" alt="...">
+                                                    <div class="card-body">
+                                                        <div class=" py-3 product-content" style="width: auto;">
+                                                            <div class="category_title">
+                                                                <p spiketip-title="10 Pieces COMPOSITE TURQUOISE &amp; COPPER Smooth Round Shape Hoop Natural Gemstone Plane Center Drill Beads Line | Copper T"
+                                                                    spiketip-pos="bottom-left" spiketip-color="black">10
+                                                                    Pieces
+                                                                    COMPOSITE TU </p>
+                                                            </div>
+                                                            <div class="categoryCartDes text-wrap oneLine">10 Pieces
+                                                                COMPOSITE
+                                                                TURQU...</div>
+                                                            <div class="price">
+                                                                <div class="grey-text"><span
+                                                                        class="text-warning ">$568.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="position-relative wow animated fadeInUp col-lg-3 col-md-6 col-sm-6 col-6">
+                                <div class="wishlist-icon">
+                                    <i class="fa fa-heart" aria-hidden="true" id="heartIcon-0"
+                                        style="cursor: pointer;"></i>
+                                </div>
+                                <a keys="23301"
+                                    href="/shop/10-pieces-composite-turquoise-copper-smooth-round-shape-hoop-natural-gemstone-plane-center-drill-beads-line-copper-turquoise-strand-23301">
+                                    <div class="item  me-2 product-card mb-3" keys="23301">
+                                        <div class="mt-0">
+                                            <div class="col overflow">
+                                                <div class="card ">
+                                                    <img src="image/cart2.webp" class="card-img-top sizing" alt="...">
+                                                    <div class="card-body">
+                                                        <div class=" py-3 product-content" style="width: auto;">
+                                                            <div class="category_title">
+                                                                <p spiketip-title="10 Pieces COMPOSITE TURQUOISE &amp; COPPER Smooth Round Shape Hoop Natural Gemstone Plane Center Drill Beads Line | Copper T"
+                                                                    spiketip-pos="bottom-left" spiketip-color="black">10
+                                                                    Pieces
+                                                                    COMPOSITE TU </p>
+                                                            </div>
+                                                            <div class="categoryCartDes text-wrap oneLine">10 Pieces
+                                                                COMPOSITE
+                                                                TURQU...</div>
+                                                            <div class="price">
+                                                                <div class="grey-text"><span
+                                                                        class="text-warning ">$568.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="position-relative wow animated fadeInUp col-lg-3 col-md-6 col-sm-6 col-6">
+                                <div class="wishlist-icon">
+                                    <i class="fa fa-heart" aria-hidden="true" id="heartIcon-0"
+                                        style="cursor: pointer;"></i>
+                                </div>
+                                <a keys="23301"
+                                    href="/shop/10-pieces-composite-turquoise-copper-smooth-round-shape-hoop-natural-gemstone-plane-center-drill-beads-line-copper-turquoise-strand-23301">
+                                    <div class="item  me-2 product-card mb-3" keys="23301">
+                                        <div class="mt-0">
+                                            <div class="col overflow">
+                                                <div class="card ">
+                                                    <img src="image/cart11.webp" class="card-img-top sizing" alt="...">
+                                                    <div class="card-body">
+                                                        <div class=" py-3 product-content" style="width: auto;">
+                                                            <div class="category_title">
+                                                                <p spiketip-title="10 Pieces COMPOSITE TURQUOISE &amp; COPPER Smooth Round Shape Hoop Natural Gemstone Plane Center Drill Beads Line | Copper T"
+                                                                    spiketip-pos="bottom-left" spiketip-color="black">10
+                                                                    Pieces
+                                                                    COMPOSITE TU </p>
+                                                            </div>
+                                                            <div class="categoryCartDes text-wrap oneLine">10 Pieces
+                                                                COMPOSITE
+                                                                TURQU...</div>
+                                                            <div class="price">
+                                                                <div class="grey-text"><span
+                                                                        class="text-warning ">$568.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="position-relative wow animated fadeInUp col-lg-3 col-md-6 col-sm-6 col-6">
+                                <div class="wishlist-icon">
+                                    <i class="fa fa-heart" aria-hidden="true" id="heartIcon-0"
+                                        style="cursor: pointer;"></i>
+                                </div>
+                                <a keys="23301"
+                                    href="/shop/10-pieces-composite-turquoise-copper-smooth-round-shape-hoop-natural-gemstone-plane-center-drill-beads-line-copper-turquoise-strand-23301">
+                                    <div class="item  me-2 product-card mb-3" keys="23301">
+                                        <div class="mt-0">
+                                            <div class="col overflow">
+                                                <div class="card ">
+                                                    <img src="image/cart3.webp" class="card-img-top sizing" alt="...">
+                                                    <div class="card-body">
+                                                        <div class=" py-3 product-content" style="width: auto;">
+                                                            <div class="category_title">
+                                                                <p spiketip-title="10 Pieces COMPOSITE TURQUOISE &amp; COPPER Smooth Round Shape Hoop Natural Gemstone Plane Center Drill Beads Line | Copper T"
+                                                                    spiketip-pos="bottom-left" spiketip-color="black">10
+                                                                    Pieces
+                                                                    COMPOSITE TU </p>
+                                                            </div>
+                                                            <div class="categoryCartDes text-wrap oneLine">10 Pieces
+                                                                COMPOSITE
+                                                                TURQU...</div>
+                                                            <div class="price">
+                                                                <div class="grey-text"><span
+                                                                        class="text-warning ">$568.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="position-relative wow animated fadeInUp col-lg-3 col-md-6 col-sm-6 col-6">
+                                <div class="wishlist-icon">
+                                    <i class="fa fa-heart" aria-hidden="true" id="heartIcon-0"
+                                        style="cursor: pointer;"></i>
+                                </div>
+                                <a keys="23301"
+                                    href="/shop/10-pieces-composite-turquoise-copper-smooth-round-shape-hoop-natural-gemstone-plane-center-drill-beads-line-copper-turquoise-strand-23301">
+                                    <div class="item  me-2 product-card mb-3" keys="23301">
+                                        <div class="mt-0">
+                                            <div class="col overflow">
+                                                <div class="card ">
+                                                    <img src="image/cart9.webp" class="card-img-top sizing" alt="...">
+                                                    <div class="card-body">
+                                                        <div class=" py-3 product-content" style="width: auto;">
+                                                            <div class="category_title">
+                                                                <p spiketip-title="10 Pieces COMPOSITE TURQUOISE &amp; COPPER Smooth Round Shape Hoop Natural Gemstone Plane Center Drill Beads Line | Copper T"
+                                                                    spiketip-pos="bottom-left" spiketip-color="black">10
+                                                                    Pieces
+                                                                    COMPOSITE TU </p>
+                                                            </div>
+                                                            <div class="categoryCartDes text-wrap oneLine">10 Pieces
+                                                                COMPOSITE
+                                                                TURQU...</div>
+                                                            <div class="price">
+                                                                <div class="grey-text"><span
+                                                                        class="text-warning ">$568.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="position-relative wow animated fadeInUp col-lg-3 col-md-6 col-sm-6 col-6">
+                                <div class="wishlist-icon">
+                                    <i class="fa fa-heart" aria-hidden="true" id="heartIcon-0"
+                                        style="cursor: pointer;"></i>
+                                </div>
+                                <a keys="23301"
+                                    href="/shop/10-pieces-composite-turquoise-copper-smooth-round-shape-hoop-natural-gemstone-plane-center-drill-beads-line-copper-turquoise-strand-23301">
+                                    <div class="item  me-2 product-card mb-3" keys="23301">
+                                        <div class="mt-0">
+                                            <div class="col overflow">
+                                                <div class="card ">
+                                                    <img src="image/cart4.webp" class="card-img-top sizing" alt="...">
+                                                    <div class="card-body">
+                                                        <div class=" py-3 product-content" style="width: auto;">
+                                                            <div class="category_title">
+                                                                <p spiketip-title="10 Pieces COMPOSITE TURQUOISE &amp; COPPER Smooth Round Shape Hoop Natural Gemstone Plane Center Drill Beads Line | Copper T"
+                                                                    spiketip-pos="bottom-left" spiketip-color="black">10
+                                                                    Pieces
+                                                                    COMPOSITE TU </p>
+                                                            </div>
+                                                            <div class="categoryCartDes text-wrap oneLine">10 Pieces
+                                                                COMPOSITE
+                                                                TURQU...</div>
+                                                            <div class="price">
+                                                                <div class="grey-text"><span
+                                                                        class="text-warning ">$568.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="position-relative wow animated fadeInUp col-lg-3 col-md-6 col-sm-6 col-6">
+                                <div class="wishlist-icon">
+                                    <i class="fa fa-heart" aria-hidden="true" id="heartIcon-0"
+                                        style="cursor: pointer;"></i>
+                                </div>
+                                <a keys="23301"
+                                    href="/shop/10-pieces-composite-turquoise-copper-smooth-round-shape-hoop-natural-gemstone-plane-center-drill-beads-line-copper-turquoise-strand-23301">
+                                    <div class="item  me-2 product-card mb-3" keys="23301">
+                                        <div class="mt-0">
+                                            <div class="col overflow">
+                                                <div class="card ">
+                                                    <img src="image/cart15.webp" class="card-img-top sizing" alt="...">
+                                                    <div class="card-body">
+                                                        <div class=" py-3 product-content" style="width: auto;">
+                                                            <div class="category_title">
+                                                                <p spiketip-title="10 Pieces COMPOSITE TURQUOISE &amp; COPPER Smooth Round Shape Hoop Natural Gemstone Plane Center Drill Beads Line | Copper T"
+                                                                    spiketip-pos="bottom-left" spiketip-color="black">10
+                                                                    Pieces
+                                                                    COMPOSITE TU </p>
+                                                            </div>
+                                                            <div class="categoryCartDes text-wrap oneLine">10 Pieces
+                                                                COMPOSITE
+                                                                TURQU...</div>
+                                                            <div class="price">
+                                                                <div class="grey-text"><span
+                                                                        class="text-warning ">$568.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="position-relative wow animated fadeInUp col-lg-3 col-md-6 col-sm-6 col-6">
+                                <div class="wishlist-icon">
+                                    <i class="fa fa-heart" aria-hidden="true" id="heartIcon-0"
+                                        style="cursor: pointer;"></i>
+                                </div>
+                                <a keys="23301"
+                                    href="/shop/10-pieces-composite-turquoise-copper-smooth-round-shape-hoop-natural-gemstone-plane-center-drill-beads-line-copper-turquoise-strand-23301">
+                                    <div class="item  me-2 product-card mb-3" keys="23301">
+                                        <div class="mt-0">
+                                            <div class="col overflow">
+                                                <div class="card ">
+                                                    <img src="image/cart12.webp" class="card-img-top sizing" alt="...">
+                                                    <div class="card-body">
+                                                        <div class=" py-3 product-content" style="width: auto;">
+                                                            <div class="category_title">
+                                                                <p spiketip-title="10 Pieces COMPOSITE TURQUOISE &amp; COPPER Smooth Round Shape Hoop Natural Gemstone Plane Center Drill Beads Line | Copper T"
+                                                                    spiketip-pos="bottom-left" spiketip-color="black">10
+                                                                    Pieces
+                                                                    COMPOSITE TU </p>
+                                                            </div>
+                                                            <div class="categoryCartDes text-wrap oneLine">10 Pieces
+                                                                COMPOSITE
+                                                                TURQU...</div>
+                                                            <div class="price">
+                                                                <div class="grey-text"><span
+                                                                        class="text-warning ">$568.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="position-relative wow animated fadeInUp col-lg-3 col-md-6 col-sm-6 col-6">
+                                <div class="wishlist-icon">
+                                    <i class="fa fa-heart" aria-hidden="true" id="heartIcon-0"
+                                        style="cursor: pointer;"></i>
+                                </div>
+                                <a keys="23301"
+                                    href="/shop/10-pieces-composite-turquoise-copper-smooth-round-shape-hoop-natural-gemstone-plane-center-drill-beads-line-copper-turquoise-strand-23301">
+                                    <div class="item  me-2 product-card mb-3" keys="23301">
+                                        <div class="mt-0">
+                                            <div class="col overflow">
+                                                <div class="card ">
+                                                    <img src="image/cart1.webp" class="card-img-top sizing" alt="...">
+                                                    <div class="card-body">
+                                                        <div class=" py-3 product-content" style="width: auto;">
+                                                            <div class="category_title">
+                                                                <p spiketip-title="10 Pieces COMPOSITE TURQUOISE &amp; COPPER Smooth Round Shape Hoop Natural Gemstone Plane Center Drill Beads Line | Copper T"
+                                                                    spiketip-pos="bottom-left" spiketip-color="black">10
+                                                                    Pieces
+                                                                    COMPOSITE TU </p>
+                                                            </div>
+                                                            <div class="categoryCartDes text-wrap oneLine">10 Pieces
+                                                                COMPOSITE
+                                                                TURQU...</div>
+                                                            <div class="price">
+                                                                <div class="grey-text"><span
+                                                                        class="text-warning ">$568.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="ftr-head" style="margin-top: 50px;">
+            <div class="container mx-auto row justify-content-center align-items-center">
+                <div class="navbarLogo col-md-7 col-6">
+                    <img width="159" height="35"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL4AAAAqCAYAAAANg+HIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAABduSURBVHgB7V0JlBTV1b6vqqe3WWSZsKjIjEBAwCUJiUDEmUEFWQSEgLiw6R8Sc8zy6+8fYyIM+eFEOYlJXI7GmMOiRIMnyoyEHWZwMICsUUEUkEYRERAGpqfXeu/+91VP91RVV89UzyA5/3/649RU1at333Lrvvvuve9Vw+AiI7znhyVqHv4FkQ0BQA0Ye84z8PmfQw45XEQwuIgI75lZoijuGhL4EmM6Mvag95oXfg855HCRoEA7gKtGeUJ7p38nuHPm1U7yK0x9FZCXAAowHgz5f0IOOVxEtFnwo7vunRLr3u1zFV3b81Tl3fje+1o0V2J7Z80CxOtBiLV0BtMhsAfuvq8n5JDDRUKbBD+8a8ZsAP43EuKOIDjIQ3Dtcdx9V0bhRSHmkLYPukXwDrr+NEmXPEKCfwNyyOEiwQVZIrx1aglDfIq8g52krAcZn0V53mQ6/TaNZte0mSiwRKCoZt9+7Vxk53SOljyKEB0gh3ajcec9ExTGErzkQvN9Z9nLkEMashZ8RVVXknmyAmJiAbjYu6aHDMeAjeAzgfdJk0ZhuE5PEFLszaJPSfWQQ7vhQvYbUjL9EncsQn9ygm+DrAQ/vP3OGYhiAJksP0cGDQwtQSGE3laayM47egHnN8hrLtg2eWaodbRqfIZwGnJoPzjXmZlDy8jKxifNXcmEOOf5oqhGTxDCelyOeyaYTBYRw9ubngX94eP/wppyF9n4l1hpFWBfQA7tB1reSQ62cCz4oX9OvEuGIrnA1WzcCyE90RKWTBzKJZYKbkuELMUBVlGrhfK6dbGjExAJQw7tB3Izb3OwhSv69qRFZKIMtqQH3XF+C6tYkbK7FWTTdQFmuDaRQuajUNMKjEbUvOT12RrS/oLfKK+R4Wa9HDXiBp5Gp/miZ05ADu1HTss7gjQ7rqNzP+uDkJuV0alKXodrJpQQQ0fqD+JYK08sIlzk3KYVyEU8Zer4VIrbN2kdcrj2yrOIiGI1ne6EnA2gDYhsntRHMD7GpUBPsmw7kAsdRC6+VBT4UGiw1VexIpBNeedrxha7FegolLyujJwSX3lVnfF5uG5COU1PNzBV6aqA0GgGPMXi7G/em1YchiyBG27qHPUU3EHt7qGA0pXODYh4miJmdb5hK2qhLTBp+ewX5o/UlHu7Kpd8DVRxGUPV21o7pOnaCP5iVPM6uRjrokXxZOHNVftbqye4YVzXPH9eR85FMQKG84et2JUqE0m83rq9gsyE7zJF6UIpEeR4gPi+MdP7RFKyERUmgMp6k4vTmXh5hmRut2/TdW+wyso0beAiRtmGERVOMfokmLgFpCOL8IGvoiogk2hC7aDaTKV5GqYcZsagApOCz7lOp7go1GalQzgPWSJcM7achK+SJosyRS8fI4lK0ctYYl2MqYDRunHzPMOq52Usp278zUzAIrrsRnKSarsi26hAgC5Lm+tTn6eC++ryJNcuoEm08nBBtG784+4bqh6lulv1LJEGV1RVfh0Fdr/MzXQWiE8oTNyFmOaVaZG3xmekpxe7zVNWNURv11vjXmHApqbKNvPWS+XYteeE98aq7om2TC6IKtEddNmZ6v5aKofQuSoVwVVFFSsPJJPP/XNyJ088+jYy1kkKWJSB6mquHNxuXENXo6wVRupuG0tl/pkui5N8Rk1L2toBaOJzfMu4imid8iJj4spEO3iiz5JJKsQideMf9A6rejZVJQ28mFr0YAzwl5SlCJoC5azpiFbsCUSGjbrZe9Nqk2IipSW62zipiehAMhMT98k0stO3NxPyDnZ0MeCRFCEXNyXTfeUr39bTNOxmpUHBP4cMCNaM7mZNi9aMrWSM1VAMtIwhXyK0+GC3OF/oKav2aQjXUNo/m8qmS6yMbB7720zlc42dpgbspJHzpS0fZH214x5L1Cf6koMfplkyLS/NMo/ENo99AlpBuObWkihjO6jt9+s8FeJlCuVeQYLY82zkkmJK+4ltO4yHUbhby5vpMALxkHwJreaT1UXjgoHYxQR/lzp9Jp3GftyjhkGqYy8N7nhGPteM/RXXcBMJ+5WUVk91nLPkIzNZPEP55iZ5GWEF20izP0HvpIgG/UmS0ZiFVyWgqnVWOSLFJjyoC5/5IJte18K4ZmQnwfF6maYJ8UaqIyA629G5gAf151vGFQrBr0N9wPBtKU0oNK+Vhh59ABlAcen/Nt5Ha0b/SiDOTdJS1OjX/uGrtidNpYKyqvfcX/gqiAH7UnVwfCi+acxIu/ILKlbs9Za/ebvn5MdXUOYN1rZRfXMRtTn0Qp+jlKFuPF/kK3+zOK5pA0g57DHmFQIfjq65bUCmvoQ3Du9Jzn8N5S3BxEs54C6rnu4vq/pUPu828qVGasvTNDs+Zig3zON8AqJamjwEqncmy/Ri8H7jM2pExMRbxKuMz5uOIUl6VvFakOq8zVu+sjuZWfOs/beiI/l9nrKV91D+W2II/eUAMNFkcKh9FStrqZ5RAmP9Kc8uez7jo7TI+YTGlGtIiXXylK/sIGWPMgRMfEasDG0YM1XykvrXmeTspxry7r6yN7u6G7Uiun+I8sWaabA7TTGPGNvj0qMANuACTspzSFWHKck8cdyRfE4v2adCOq1giq7xw+HYtUxJTGlU1rFmOtFNscSSaHL5EmwQWj9ykhDa0eQ9TWveKBcPG01XmtlupNPHRjo25bVYaOOtj1G215NpMYAf0GktZACbsj8W3dTrZ6SQ3jck02ozzAbObvaNWLnZmL/w5tX7cfnkwdHODftoRKfWLzSXNoVOc+3qUFjedCE1ULI/CE/QTJKmIr1f5i8Mdw4+RApBmqE+4tfPybYdalcmDXgZgEgFISIbbzU9P84igdKK2gg4gLfw8wWR+q/9mPjbKZUYFxnzkwl0OrRh1P+QWfIaOISvYk0gtnHkbA5slyGZ+MxmkZCO8N+yZksiKfGS/TetfIc0Oyky2EuMSkUMSZG+Qub3jhgLjS4aXptaA2KjV0fp9GRo/a0qyd/CVA3IZtDfnyVvlUxTYUyIz2QGVdGazBW+Jf/WtSmTRBFoa+r4INwUncFBKTMAuGGFl3dNn+bwMzsmkUwsYByrk/dh8BWTtigy0hLTL7ejxThuM60ToPgWtALP8Df3Wdsm4vgj34jVm23bRwOMFMCzxvwqmVqZyidHeKLZxNMOZCqXnr9lyDskuuHWa8AJRMumSktgg3bFiei8mT7WMg3GT5vy89YXz9w3rd2dZipq+Eiz0JshBws5wG+YTRgMQIRNLqqotV34jID2AslKvcGc7hBeO6I0+Vyxj8WLyCUj1gX0HBovS6TBelPJqHVLowORis7Q6uz1yXTUxNYUnYDCtBi+xg9aGx5cN3wmzWkNvpHrjiTT/BWraeYQ20z0AnbZdVwOUjJ3Is35RA9wAlPbMEDlVLWYncffMtIQswfa5iMnjOz5a415gy7t/cwFa0eMeeMi9k3Iuv3ZCb4OaaNnQ69Z6hQcHMHCZ//INa+2lJ1k5B1zPVqtb8yqo5nyd7plwzkyJfYbachUT22idNlpBZpkPpI2eWjFjT3I7rpGzsnkJv7D1G4uujHGrITB1HMU/ZJbGij6cyiZTmaTYo17qCweMt7v3PmtPPU0zqVK0qMxmnYnRbv+i8KWFMFkr+aPWlcLmZAYsIZuOUCWWpJmkjNgJrHfBuKJ5kE0GWtowinICLJLg8YAEVmHzjbxmfucPayCG3NCY2CA0+0S2c5GgGczOc6ZaeBTcz3N17aCT3rrI3nmbhjqks8ZkOar3WUuVG5Jtgo+6mYOLh/iiwoxAKXgM4j4RtUGmrNgPqK5A1/4VNNmt6tPFzxMDgx4G4pfsratqawHoAVgZaUSHLS+jAZn1pvwsn0hTmnY0K3h8OqyY2RrpmYebyG7jE4f2uVXhOhtqeMTcNqW9gh+tgOHQpJgXI9UvhrB1weksWgnA4w8YzNN86Wtc4uC7dMfMpjYVGGtNQ+F9bqARdWRhj8nzyG/2p9eXHIFd5u5MVqRtazSirqU8xVeXV4iOJ9Plc4hW9fhvJlA8B83Xq0qMDEqNs1wgVKayXFvEV8hjeBikcJgTvLeDXALZBB8skm/aZhQETS2Axy1RTcdDAkqZIWs6TUA42ZFp+zLls/65jsjvQMatAwWbpxBbRxUlWFiw5jGh+gOHo8/bVNoWjyec65Hb8gp7ZVyPkVi9kiRCeGy0gWXf1uPsS5fPpkCRXEZn/8UI/HF4AAN1d8dEP7H0LmRld/do1JojVZbH0bkAYoeyTj5F1k7eiYHygFNJOKYxq8En5GhuZTDxfk0u3zB6qEjyD/pY3D+F/gnvPUpZNt+eQQCkBX0D4Oy4Zlmyf8V8Rl49jTSNMrQF1vnVtPiBxurhnyDrnvQC9iTP27bbptCC9IdKZ7wsDXe7NjyuGnJP20TFR2KR7lbPhrnOfZHkDFuzp/zT9p+rKU+Uftmh6uGvE2j6H0ayZU0oDqQX/ELT9x1uW/s28Pzb3v7ebr3GOpxtiXC5EA5fIkOadjoPacgzit04U9o1u+EVw6eb8wTfmNwCS04/8ng+G3xNnavBKdot3NrpY+2nN/q3PILy7MUuIXGicpP40WzCNja+KQxNQWUEXIKIzv9KdtChdYpzV+klZ6mq68nyyWN/46ZTh+6piQqZWF4xfUPoIxxIwR847dnXAENV19DizTel6kjibi2/tkuLvyi/uTc0lkBU7xaQfQ2+xPMUSzbsbC3kcZ3+7ZA6O/XD0MF5yuMYssCfkl9n0ycrpHbAKhfY8h38su8dL/QF7380axMvkSoD9oMa18UB/rCRPMV2fjS1Mn2Q1luYZvBvHLZrbQxuX0S2Q/JMwj4b9+x2Pocl/cvCCMqaZ1Met2c920y+wK+iTvMpg7w8za8kV0q0YsAmJdpv8vZV66j2SBvE+g/T5LIwhEfKJy481m7/LSC5zXcOhJ8bIOWzJZGzmbhqm+vp1lK2vg+KsBNvRlJUTKNzu+QgbhV5fii/3s7P7a6SK22hUyVdvm21r60EtXR6J9qtPEdDrrs+cwBDfUwB6oAE4GZZhjGsNT4FIlB8z4GUBZRRT3IWJ9iV2B9ntvlsY3X0jKEPih4H33zlZLuFJPFcT7ty63kM4DFBZN2L4YMcLuVuWSDliTvqfzFhRN32wq9jJuHzxj3vjnV+Nk6t9LGd66KThJ/Cl3eKtT4cDIEf5c/cc/DTja2OYZwaAZkpLf2P95yfhnVUdrwmwVZ89lC46hKq3HRTOQiDbGOxHC6haIHafun8yf/K/NStH38PxgCb1+WMnOUv6fl0fCkXSiKXv5hXwO0/Ps6Qow23moClmTM29DgNseXwZmNb6ZpHXI4uZzTFDL3kxRmHS6v84s7PHJBhV7CIvj5+f7sQrrUOFOUxgkPTLLgcCt0tnzWzRYDqxxFdRDMsf/mOhWKgjxndQLIxl9/Br/M+Ds5HTzBsJ1TLB0bkq/SpvvPPPt2r7LSCiW+Md3pENVaSAxls/Zm/OA8uLx/N3K0TV9vMbmjMgPqOa1CmPP+251bCYo2jU/mDZ86ORguNCzBgwLVldWvV5B5cMZI79JYy/RS45sDHOAIWfM5BlmvEIvMX6O5/FPf3RZ89ep7aRL4MUlHA42k1/13vP9UfguaiI0+FA3/bWCQBlSBMZ0cyQLgyrVy3xURr2GV6bGtgu/tWxt8dcAMig5XCFTiNMz+Wnjn+7XQCpSYy2XSrHqFNBAyIC9OpppxtDv9JiNrR02aOi7HNMykUdn68PIBr9M6S53cgq9H6xWlnqM4R1bjqTymRITGovnTPvgcnEJGrwxN4BrrRadjjum52EfTr+FnY1AOzoyOBi2fT0Oz9nY2w2TLZ13Os6VJk5fUpd7IgqnvkU2vf4yRwFRoFWQiydClSfBJ3gsVhV8l6MUKlT2ZibZg6r6ldFoKWcB/z7vHQq/0O0m1pISdxEduz91ozduw9KqBCteqTe1FuOzIohKvNfJjyiP9ghOGb94ZdGiNRmhaJ2b+oqzlISZwGdmADzXdeUlB30UEd7EkJSXoL0V+RSNPdBN65apPyTytDjI2v8uU/S1/oik0EnKW+qJOZUyucm8Gp0C+lehnNN/jQ2cXlSzuOCtgmo3lV1LRV/v9gQII95rSAQZR/g7W/KY8q3p7wucMGtsBn0kP+ywOcasrc2QhdDAu3boZdmour40IL+t7gIrsa0k+SrVRKE75wH/XgTK4wGj8a795DHGOKVFhzxLzXwzV1x/yFRaVuPLUSbTy/BB1bDmNv+uo36ldmchwKYtrj/lnfGy7/B9a1vendPqDMY3KmX/iYHRBaaX9Swm/0u9RFLjA1CSAn3nv/vCPdvmlUHi93oVE833IHgGOfEzhPYcyftoXWdbvaZpSrFs6tiKIVaQ1T5O4FKtMKdRQrC+4++AGsGmf2+05wgx7g0jG95GCfqARz+64RPUXc3BPoD7eTczpSf2gKBwzBxgYbIE4/iLi097rNOXjc9Y6bPmsYKX3lHic/eRQ2sLB+8v7u3vF+ZskbyMMyfU0M40mOdsKNji7qF+Jx41yK0yhIfmdaCx6Bw3KQJsFP/RS75epuXfbPaNRNj5/2qFquMCQL8XjyttJl71aykcvqjJ/2kfzQkv7/IRegq0AChSzCqYfXiyjUJFYrFrOCNSfr2coMUpO6FYtBlMK7z10KvRyyWCa0X9D4bU+9PAyWxKGRyl6tdU37eCddo8jL5X2Jd3+JL2A0ZANGByPxuMDMmnU6OLeA2i23U5Ckt9SMRqI18pxumHV5h96xxaZ/Z1N8/tURP5b9LK+WT44pyqQqsxj4XO+Gf9pH+iaM+4PNcbxDhZfR++thnh0bS7Dt89xyqSLTjykGMqb8neRrIwN7XoHYeoEG5LH/6QX0hMPJy79/TvFBOWu5ayKjYRV32m7iaQKurB5iSXi697CX+GYcvuNBLyJd9ZvmV3/JE2OO05DyTmN8cp0cI0YJPLdU/P3/GQV0L+KcffKpxaa8iYuZ90LROgImPNl5XuaiV942NIfL/VLkt5jg9PZ6xcpQf15zXfwKFo8vrksMLUG6nPpgpP/0JWpMbl1z5IwrD3kEvawgje4z8oirGlC10DlLbXbTqlo/yswaQkxm7lCrpQ8/KDeVe6lbYg3Q1x65az8xD+0hgyqk/8mfXbzA+I+HZR7PgKhW1Rf7pRzN+9UZC9ELjol4nqTULyaYxCymDI/Tnyfxph5+RtyTQ5H2ptSScjaQ8TjBUTtPsEqF66mkmCCTJvHIGScT4P2MZvr+wmu2MKy7mIi8HYG9Gmx51RZvis8YFUxVG7xhbNO/abuosLr1RWAonxgbIFKnwzcp2g0jbEFrScwiXdrJgnxfNChxoKe/5JZd1VmJuV8H3j/xbfrjq7IulPd0ueJNeSPIn1XcrCJOc8Cq4qOddJETLDEn78mcGBrZGh0/19kQ7RnqEhDt23Oc9MXDKfiebjC11l3RDVPvT4IspijhUMCvw/+JnYNos+BKhxT03EUP0aYn032aa8mZeLKH/vwbi1V+JV7rZQ0GAoxR3Gua/97CzjWeExkVXyO8hdLOIyQ2wsz7JhxzajDabOhK+aPHIBvXkGJr2j+f/x7F3IAdbNP6lx6VkGqZsfVISNfn3ORd6nUbwD2hG1QWfnPTcr861E+0SfPYD+Y0mrIAcWgQTsSvQsFxOy2lHIUtQ+L8guT+fzu9BDu1CuwQ/B2eIM3HaZV576Q5ZQmFiRNK/o3WSJZBDu9Cu/wMrB2coKjol4+LN3x0zuCf4fJdrndKHX+gyh4S+VF7LMGLB7BOLIYd2ISf4FwFsCkVABfup3O/dlOSnUPDmxj93uf/8M4WdM9E1/qn7N0MvdFtKptE8PQHZHqbyUZBDu9GuqE4O2aHx+a7jKYb/B2xaU0iCXkINxaKl3R+hkA/FCvRNEDeQE9z0wTnWC1B/Vzj78/mQwwVBTvAvMrCy3NXQdf9tqqqMICEfBPqKsfxwnzXvPWFwggbCOQp7bmWgrPblRdaxWfW5/yrpAuJ/AXT6kvBBURDlAAAAAElFTkSuQmCC"
+                        class="img-fluid" title="" alt="">
+                </div>
+                <div class="social-icons text-right col-md-3 col-6">
+                    <a href="https://www.facebook.com/profile.php?id=100063585218866"><img width="24px" height="24px"
+                            src="image/f.jpg" alt=""></a><a href="https://www.instagram.com/mangtum_shop/"><img
+                            width="24px" height="24px" src="image/i.jpg" alt=""></a><a
+                        href="https://twitter.com/mangtumllc"><img width="24px" height="24px" src="image/t.jpg"
+                            alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center hide-footer">
+                <div class="col-lg-7 col-md-12">
+                    <div class="footer-row">
+                        <div class="footer-card">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="/terms-and-condition">Terms And Conditions</a></li>
+                                <li><a href="/privacypolicy">Privacy Policy</a></li>
+                                <li><a href="/blog">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-card">
+                            <h4>Our Links</h4>
+                            <ul>
+                                <li><a href="/contact">Contact Us</a></li>
+                                <li><a href="/about">About Us</a></li>
+                                <li><a href="/faq">FAQ</a></li>
+                                <li><a href="/seller">Seller</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-card">
+                            <h4>Enquiry</h4>
+                            <ul>
+                                <li><a href="tel: +1 980-228-8715"><i class="fa fa-phone text-color1"></i> +91
+                                        7847077422
+                                        (Text &amp; WhatsApp only)</a></li>
+                                <li><a href="mailto: support@mangtum.com"><i class="fa fa-envelope text-color1"></i>
+                                        vickymuduli@gmail.com</a></li>
+                                <li><a href="address: Charlotte, North Carolina, USA"><i
+                                            class="fa fa-location-arrow text-color1"></i>salipur,cuttack,odisha</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="subscribe footer-card" style="margin-top: 50px;">
+                        <h4>Get In Touch</h4>
+                        <div class="form-subscribe">
+                            <form>
+                                <div class="formflex"><input type="email" name="email" class="form-control subform"
+                                        placeholder="Enter Email" style="text-align: left;">
+                                    <button class="subbtn" type="submit">Subscribe</button> <br>
+                                </div>
+                            </form>
+                            <div class="ft-content grey-text mt-3">Driven by the strongest ideals &amp; motivation,
+                                focused
+                                on delivering high-quality, reliable and user-friendly products to consumers.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-year mt-5 copyright">
+                ©<span id="year"></span>| Mangtum-LLC, All Rights Reserved.
+            </div>
+        </div>
+
+</body>
+
+</html>
